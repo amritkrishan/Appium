@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+     <!-- <listeners>
+		<listener class-name="Appium.ScreenshotUtility" />
+	</listeners> -->
+    <listeners>
+		<listener class-name="Appium.ListenerClass" />
+	</listeners>
+  <test name="Test">
+  <parameter name="myURL1" value="http://0.0.0.0:4723/wd/hub"/>    
+  <parameter name="myURL2" value="http://127.0.0.1:4727/wd/hub"/>  
+  <classes>
+     <!--  <class name="Appium.Calculator"/> -->
+      <class name="Appium.NAB"/>
+      			
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
