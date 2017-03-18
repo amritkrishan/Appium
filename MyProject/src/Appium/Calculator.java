@@ -18,7 +18,9 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -36,7 +38,7 @@ public class Calculator {
 		executeBat1();
 		try 
 		{ 
-			Thread.currentThread().sleep(20000); 
+			Thread.currentThread().sleep(15000); 
 		}
 		catch ( Exception e ) { }
 		System.out.println("Now do everything after this");
@@ -103,7 +105,7 @@ public void takeScreenShot() {
 
 public static void executeBat1() throws IOException 
 { 
-	String cmd1="cmd /c \"cd C:\\Program Files\\Appium\\node_modules && start C:samplenote1.bat\"";
+	String cmd1="cmd /c \"cd C:\\Program Files\\Appium\\node_modules && start C:\\GitRapo\\MyProject\\samplenote1.bat\"";
 	Runtime r1=Runtime.getRuntime(); 
 	Process pr1=r1.exec(cmd1); 
 } 

@@ -20,7 +20,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -41,7 +43,7 @@ import io.appium.java_client.android.AndroidKeyCode;
 			executeBat2();
 			try 
 			{ 
-				Thread.currentThread().sleep(20000); 
+				Thread.currentThread().sleep(15000); 
 			}
 			catch ( Exception e ) { }
 			System.out.println("Now do everything after this");
@@ -149,7 +151,7 @@ import io.appium.java_client.android.AndroidKeyCode;
 		 }
 	  public static void executeBat2() throws IOException 
 	  { 
-	  	String cmd="cmd /c \"cd C:\\Program Files\\Appium\\node_modules && start C:samplenote2.bat\"";
+	  	String cmd="cmd /c \"cd C:\\Program Files\\Appium\\node_modules && start C:\\GitRapo\\MyProject\\samplenote2.bat\"";
 	  	Runtime r=Runtime.getRuntime(); 
 	  	Process pr=r.exec(cmd); 
 	  } 
